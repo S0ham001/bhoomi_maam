@@ -110,14 +110,7 @@ namespace bhoomi_ma_am
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (richTextBox1.Text == "0" && richTextBox1.Text != null)
-            {
-                richTextBox1.Text = "0";
-            }
-            else
-            {
-                richTextBox1.Text = richTextBox1.Text + "0";
-            }
+            richTextBox1.Text = "0";
         }
 
         private void button14_Click(object sender, EventArgs e)
