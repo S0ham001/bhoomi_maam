@@ -198,8 +198,35 @@ namespace bhoomi_ma_am
 
         private void button17_Click(object sender, EventArgs e)
         {
-
-
+            y = Convert.ToDouble(richTextBox1.Text);
+                switch (result)
+                {
+                    case "+":
+                        ans = x + y;
+                        richTextBox1.Text = ans.ToString();
+                        break;
+                    case "-":
+                        ans = x - y;
+                        richTextBox1.Text = ans.ToString();
+                        break;
+                    case "*":
+                        ans = x * y;
+                        richTextBox1.Text = ans.ToString();
+                        break;
+                    case "/":
+                        if (y != 0)
+                        {
+                            ans = x / y;
+                            richTextBox1.Text = ans.ToString();
+                        }
+                        else
+                        {
+                            richTextBox1.Text = "Error";
+                        }
+                        break;
+                    default:
+                        break;
+                }
         }
     }
 }
